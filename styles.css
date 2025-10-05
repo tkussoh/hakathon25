@@ -108,8 +108,12 @@ h1 {
   max-width: 350px;
 }
 
-{
-  padding: 2em;
+  .card {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 50px;
+  max-width: 350px;
 }
 
 .card h2 {

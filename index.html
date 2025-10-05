@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXOQUEST</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      color: #fff;
+      background: radial-gradient(circle at top left, #0b0b1f, #1b0033, #0b0b1f);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+    .top-lines {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+      gap: 6px;
+    }
+
+    .line {
+      width: 60px;
+      height: 2px;
+      background: #fff;
+      opacity: 0.8;
+      border-radius: 2px;
+    }
+
+    h1 {
+      letter-spacing: 0.3em;
+      font-weight: 600;
+      margin: 30px 0;
+      font-size: 2rem;
+    }
+
+    .container {
+      display: flex;
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      max-width: 1000px;
+      width: 90%;
+      height: 450px;
+    }
+
+    .left-panel {
+      width: 40%;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .param {
+      letter-spacing: 0.2em;
+      font-size: 16px;
+      color: #ddd;
+      text-align: left;
+    }
+
+    .right-panel {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 30px;
+      padding: 50px;
+      max-width: 350px;
+    }
+
+    .card h2 {
+      font-size: 24px;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+
+    .card small {
+      font-size: 11px;
+      color: #999;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .enter-btn {
+      background: #ffecb3;
+      color: #000;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .enter-btn:hover {
+      background: #ffe082;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="top-lines">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+
+  <h1>EXOQUEST</h1>
+
+  
+  <div class="container">
+    <div class="left-panel">
+      <div class="param">DISTANCE</div>
+      <div class="param">TIME</div>
+      <div class="param">POSITION</div>
+      <div class="param">SIZE</div>
+      <div class="param">RADIUS</div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+      <div class="card">
+        <h2>WELCOME!</h2>
+        <p>EXPLORE THE UNKNOWN!</p>
+        <small>PLEASE SELECT MINIMUM OF 2 PARAMETERS TO PROCEED</small>
+        <button class="enter-btn">ENTER</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
